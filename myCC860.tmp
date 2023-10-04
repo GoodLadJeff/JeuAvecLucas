@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2jaris2cbrms"]
+
+[ext_resource type="Script" path="res://myCube.gd" id="1_2tdon"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h85tm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6w1eg"]
+
+[node name="MyCube" type="Node3D"]
+script = ExtResource("1_2tdon")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+gravity_scale = 0.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SubResource("BoxShape3D_h85tm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D/CollisionShape3D"]
+mesh = SubResource("BoxMesh_6w1eg")
+
+[connection signal="body_entered" from="RigidBody3D" to="." method="_on_rigid_body_3d_body_entered"]

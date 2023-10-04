@@ -1,3 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1696456940
-icon.svg::CompressedTexture2D::1494544512646345017::1696456910::1696456910::1::::<><>::
+::res://::1696458324
+icon.svg::CompressedTexture2D::1494544512646345017::1696456404::1696456412::1::::<><>::
+myCube.gd::GDScript::-1::1696458050::0::1::::<>Node3D<>::
+main.tscn::PackedScene::2516987257543798595::1696458355::0::1::::<><>::uid://d2jaris2cbrms::::res://testJeff.tscn
+testJeff.tscn::PackedScene::9072971036811867894::1696458324::0::1::::<><>::res://myCube.gd
